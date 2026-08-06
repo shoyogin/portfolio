@@ -27,9 +27,9 @@ nothing to compile; publish the directory as-is.
 
 ## The CV download
 
-The **Download CV** button links to `uploads/CerriG_Resume.pdf`, which is **not
-in this repo yet** — the file has to be added by hand. Until it is, that button
-404s.
+The **Download CV** button serves `uploads/CerriG_Resume.pdf`, saved to the
+visitor as `Ginevra-Cerri-CV.pdf`. Replace that file in place to publish a new
+version — no markup change needed.
 
 To change which file it points at, edit the one link in `index.html`:
 
