@@ -471,12 +471,48 @@ dl, dd { margin: 0; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 24px;
+  overflow: hidden;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 .project:hover {
   border-color: var(--accent);
   background: var(--surface-hover);
+}
+
+/* The whole card is one link: anchor fills it so any pixel is clickable. */
+.project__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+}
+.project__link:hover { color: inherit; }
+.project__link:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: -2px;
+}
+
+.project__media {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.project__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.project:hover .project__media img { transform: scale(1.04); }
+
+.project__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 24px 22px;
 }
 
 .project__head {
@@ -486,9 +522,29 @@ dl, dd { margin: 0; }
   gap: 16px;
 }
 
-.project__name { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
+.project__name {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+}
+.project:hover .project__name { color: var(--accent-bright); }
 .project__year { font-family: var(--font-narrow); font-size: 14px; color: var(--text-muted); }
 .project__desc { margin-top: 8px; color: var(--text-muted); }
+
+.project__cta {
+  margin-top: auto;
+  padding-top: 16px;
+  font-family: var(--font-narrow);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+.project:hover .project__cta { color: var(--accent-bright); }
+.project__arrow { display: inline-block; transition: transform 0.2s ease; }
+.project:hover .project__arrow { transform: translate(2px, -2px); }
 
 /* -------------------------------------------------------------- skills */
 
@@ -668,4 +724,6 @@ dl, dd { margin: 0; }
   html { scroll-behavior: auto; }
   .btn--cv { animation: none; }
   * { transition-duration: 0.01ms !important; }
+  .project:hover .project__media img,
+  .project:hover .project__arrow { transform: none; }
 }
