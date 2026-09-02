@@ -431,6 +431,18 @@ dl, dd { margin: 0; }
   letter-spacing: -0.025em;
 }
 .role__org { font-weight: 400; color: var(--text-muted); }
+.org-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--border);
+  text-underline-offset: 4px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.org-link:hover, .org-link:focus-visible {
+  color: var(--accent-bright);
+  text-decoration-color: var(--accent-bright);
+}
 
 .role__summary { margin-top: 6px; color: var(--text-soft); }
 
