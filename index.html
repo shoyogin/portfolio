@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ginevra Cerri — Senior Perception Engineer</title>
-<meta name="description" content="Senior Perception Engineer working on computer vision, object detection and tracking, spatial estimation and vision-language models for autonomous vehicles and robotics.">
+<meta name="description" content="Senior Perception Engineer working on computer vision, sensor calibration and fusion, multi-target tracking, monocular depth estimation and vision-language models for autonomous vehicles and robotics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@
 
       <div class="hero__aside">
         <p class="hero__intro">
-          Today I run the perception workstream inside a larger autonomy stack: object detection and tracking, depth and spatial estimation recovered from cameras alone, and vision-language models that identify what the scene contains, integrated with the modules around it.
+          I own complete perception stacks, from sensor calibration and fusion to multi-target tracking, monocular depth estimation and VLM-based scene understanding, delivered under hard real-time constraints and integrated with the modules around them.
         </p>
 
         <dl class="meta-list">
@@ -91,6 +91,7 @@
       <ul class="tag-row">
         <li class="tag">Autonomous vehicles</li>
         <li class="tag">Computer vision</li>
+        <li class="tag">Sensor fusion</li>
         <li class="tag">Vision-language models</li>
         <li class="tag">Robotics</li>
       </ul>
@@ -99,15 +100,15 @@
     <dl class="stats">
       <div class="stat">
         <dt class="stat__value">2nd</dt>
-        <dd class="stat__label">place at A2RL, the team's first eligible autonomous racing competition</dd>
+        <dd class="stat__label">place at A2RL in the team's first eligible autonomous racing competition</dd>
       </div>
       <div class="stat">
         <dt class="stat__value">250 km/h</dt>
-        <dd class="stat__label">the speed the perception stack has to stay reliable at</dd>
+        <dd class="stat__label">closed-loop perception validated at race speed</dd>
       </div>
       <div class="stat">
-        <dt class="stat__value">5+</dt>
-        <dd class="stat__label">engineers led on an external delivery, end to end</dd>
+        <dt class="stat__value">4</dt>
+        <dd class="stat__label">perception and navigation sub projects owned in parallel</dd>
       </div>
     </dl>
   </section>
@@ -116,7 +117,7 @@
     <div class="section-head">
       <span class="section-num">01</span>
       <h2 class="section-title">Experience</h2>
-      <p class="section-note">Five years turning perception research into systems that run on real robots.</p>
+      <p class="section-note">Five years shipping perception on real vehicles.</p>
     </div>
 
     <div class="timeline">
@@ -128,12 +129,12 @@
         </div>
         <div class="role__body">
           <h3 class="role__title">Senior Perception Engineer <span class="role__org">· <a class="org-link" href="https://sirb.ai/" target="_blank" rel="noopener">SIRB AI</a></span></h3>
-          <p class="role__summary">Leading perception for swarm autonomy, moving from research to a commercially deployed product.</p>
+          <p class="role__summary">Perception lead for swarm autonomy, taking a research stack to a commercially deployed product.</p>
           <ul class="role__points">
-            <li>Architecting the end-to-end perception framework for the research-to-commercial transition of SIRB AI: computer-vision model optimization, deployment targets, and a large-scale data management architecture for continuous retraining.</li>
-            <li>Owning 4 stack sub-components for vision and navigation tasks, one of them with an external startup, while coordinating with the other module leads for integration.</li>
-            <li>Applying vision-language models to classify the identity and affiliation of detected entities in the scene, alongside spatial estimation that raises object localization accuracy without depth sensors.</li>
-            <li>Designed field demos jointly with the other sub-team leads, then validated and presented them on site, representing the perception module directly to clients.</li>
+            <li>Architect the end-to-end perception framework for the research-to-product transition: JIPDA multi-target tracking, VMTI output, model optimization for embedded deployment, and a synthetic and real dataset pipeline for retraining.</li>
+            <li>Develop monocular depth and target position estimation from a single camera, with no depth sensor or LiDAR, and apply vision-language models to classify detected entities and their affiliation.</li>
+            <li>Own 4 parallel sub projects across vision and navigation, one developed jointly with an external startup, and coordinate integration with the other module leads.</li>
+            <li>Design field demos jointly with the sub-team leads, validate them on site and present them to clients.</li>
           </ul>
         </div>
       </article>
@@ -147,9 +148,9 @@
           <h3 class="role__title">Senior Perception Engineer <span class="role__org">· <a class="org-link" href="https://www.tii.ae/" target="_blank" rel="noopener">Technology Innovation Institute</a></span></h3>
           <p class="role__summary">Perception lead for the TII Car Racing team, racing a driverless car wheel-to-wheel above 250 km/h.</p>
           <ul class="role__points">
-            <li>Led the Perception Division to a <strong>2nd place finish in the team's first eligible A2RL competition</strong>. Opponent detection and tracking, visual localization error estimation inside a hard latency budget.</li>
-            <li>Managed a 5+ person external team on a custom perception algorithm: defined requirements, built the dataset, benchmarked performance and drove it to delivery.</li>
-            <li>In the competition's earliest stage, built and benchmarked the car's sensor suite, then delivered it with a baseline perception stack to the organizers, acting as technical consultant.</li>
+            <li>Led the Perception Division to a <strong>2nd place finish in the team's first eligible A2RL competition</strong>: designed, reviewed and integrated the startup-built camera, radar and LiDAR pipeline (data collection, calibration, fusion, opponent tracking, visual localization error) inside a hard real-time latency budget.</li>
+            <li>Specified, reviewed and integrated an odometry-based object speed estimation filter built by a 5+ engineer external startup team: set requirements, built the dataset, benchmarked and shipped on the car.</li>
+            <li>In the competition's earliest phase, selected and benchmarked the sensor suite and delivered it with a baseline perception stack to the organizers as technical consultant.</li>
           </ul>
         </div>
       </article>
@@ -162,7 +163,7 @@
         <div class="role__body">
           <h3 class="role__title">Customer Solutions Engineer <span class="role__org">· <a class="org-link" href="https://www.unchainedlabs.dev/" target="_blank" rel="noopener">Unchained Labs</a></span></h3>
           <ul class="role__points">
-            <li>Directed end-to-end development of the Hunter ecosystem, an AI agent for on-chain insights, covering product scoping, roadmap, design direction and release, alongside a full-time engineering role.</li>
+            <li>Led product definition and delivery of Hunter, an AI agent for on-chain analytics, from scoping to release, alongside a full-time engineering role.</li>
           </ul>
         </div>
       </article>
@@ -175,8 +176,8 @@
         <div class="role__body">
           <h3 class="role__title">Research Assistant, Robotics &amp; CV <span class="role__org">· <a class="org-link" href="https://www.move.deib.polimi.it/" target="_blank" rel="noopener">Polytechnic of Milan, mOve</a></span></h3>
           <ul class="role__points">
-            <li>Kicked off, designed and deployed the perception stack for the Aida project, which spun off into Niulinx, an autonomous-driving startup for urban mobility.</li>
-            <li>Collaborated with Maserati S.p.A. on 1000 Miglia 2023, running the first autonomous vehicle in the race's history.</li>
+            <li>Designed and deployed the perception stack for the Aida project, later spun off as Niulinx, an urban mobility autonomous driving startup.</li>
+            <li>Collaborated with Maserati S.p.A. on 1000 Miglia 2023, fielding the first autonomous vehicle in the race's history.</li>
           </ul>
         </div>
       </article>
@@ -189,7 +190,7 @@
         <div class="role__body">
           <h3 class="role__title">Undergraduate Researcher, CV <span class="role__org">· <a class="org-link" href="https://izonics.com/" target="_blank" rel="noopener">IZONICS</a></span></h3>
           <ul class="role__points">
-            <li>Collected and labelled 100+ samples into a training dataset for a CNN reaching 95% accuracy classifying biological vs. PVC particles; reported technical results directly to the founders.</li>
+            <li>Built a 100+ sample dataset and trained a CNN to 95% accuracy on biological vs. PVC particle classification; reported results directly to the founders.</li>
           </ul>
         </div>
       </article>
@@ -215,23 +216,8 @@
               <strong class="project__name">A2RL Autonomous Racing</strong>
               <span class="project__year">2024–25</span>
             </div>
-            <p class="project__desc">Detection, tracking and opponent state estimation for a driverless race car. 2nd place, debut season.</p>
+            <p class="project__desc">Camera, radar and LiDAR perception for a driverless race car. 2nd place, debut season.</p>
             <span class="project__cta">a2rl.io <span class="project__arrow" aria-hidden="true">&#8599;</span></span>
-          </div>
-        </a>
-      </li>
-      <li class="project">
-        <a class="project__link" href="https://www.drpxbt.xyz/" target="_blank" rel="noopener">
-          <figure class="project__media">
-            <img src="assets/projects/hunter.jpg" alt="The Hunter app: a crypto intelligence agent for on-chain research" width="1120" height="630" loading="lazy" decoding="async">
-          </figure>
-          <div class="project__body">
-            <div class="project__head">
-              <strong class="project__name">Hunter</strong>
-              <span class="project__year">2024–</span>
-            </div>
-            <p class="project__desc">AI agent turning raw on-chain activity into readable insight. I own product and release.</p>
-            <span class="project__cta">drpxbt.xyz <span class="project__arrow" aria-hidden="true">&#8599;</span></span>
           </div>
         </a>
       </li>
@@ -245,7 +231,7 @@
               <strong class="project__name">1000 Miglia 2023</strong>
               <span class="project__year">2023</span>
             </div>
-            <p class="project__desc">Deployed on a Maserati MC20 Cielo, the first autonomous vehicle ever to take part in the historic road race.</p>
+            <p class="project__desc">On a Maserati MC20 Cielo, the first autonomous vehicle to run the historic road race.</p>
             <span class="project__cta">1000miglia.it <span class="project__arrow" aria-hidden="true">&#8599;</span></span>
           </div>
         </a>
@@ -260,8 +246,23 @@
               <strong class="project__name">Kymatics</strong>
               <span class="project__year">2024</span>
             </div>
-            <p class="project__desc">Voice-to-deployed-web-app code assistant, model agnostic. Built at Mistral Worldwide Hacks.</p>
+            <p class="project__desc">Voice to deployed web app code assistant, model agnostic. Built at Mistral Worldwide Hacks.</p>
             <span class="project__cta">kymatics.vercel.app <span class="project__arrow" aria-hidden="true">&#8599;</span></span>
+          </div>
+        </a>
+      </li>
+      <li class="project">
+        <a class="project__link" href="https://www.drpxbt.xyz/" target="_blank" rel="noopener">
+          <figure class="project__media">
+            <img src="assets/projects/hunter.jpg" alt="The Hunter app: a crypto intelligence agent for on-chain research" width="1120" height="630" loading="lazy" decoding="async">
+          </figure>
+          <div class="project__body">
+            <div class="project__head">
+              <strong class="project__name">Hunter</strong>
+              <span class="project__year">2024–</span>
+            </div>
+            <p class="project__desc">AI agent turning on-chain activity into readable insight; owned product and release.</p>
+            <span class="project__cta">drpxbt.xyz <span class="project__arrow" aria-hidden="true">&#8599;</span></span>
           </div>
         </a>
       </li>
@@ -279,29 +280,28 @@
       <div class="skill-row">
         <h3 class="skill-label">Perception &amp; ML</h3>
         <ul class="pill-row">
-          <li class="pill">Computer vision</li>
           <li class="pill">Object detection &amp; tracking</li>
+          <li class="pill">Multi-target tracking (JIPDA)</li>
           <li class="pill">Monocular depth estimation</li>
-          <li class="pill">Spatial estimation &amp; localization</li>
-          <li class="pill">Sensor fusion</li>
+          <li class="pill">Sensor calibration &amp; fusion</li>
           <li class="pill">Vision-language models</li>
-          <li class="pill">Dataset curation</li>
-          <li class="pill">Model optimization &amp; benchmarking</li>
+          <li class="pill">Synthetic data generation</li>
+          <li class="pill">Model optimization</li>
         </ul>
       </div>
       <div class="skill-row">
         <h3 class="skill-label">Engineering</h3>
         <ul class="pill-row">
-          <li class="pill">Python</li>
           <li class="pill">C++</li>
+          <li class="pill">Python</li>
           <li class="pill">ROS</li>
           <li class="pill">Docker</li>
+          <li class="pill">Git &amp; GitHub</li>
           <li class="pill">SQL</li>
-          <li class="pill">Data pipelines &amp; MLOps</li>
           <li class="pill">MATLAB &amp; Simulink</li>
+          <li class="pill">Data pipelines &amp; MLOps</li>
           <li class="pill">Foxglove</li>
           <li class="pill">PlotJuggler</li>
-          <li class="pill">Git &amp; GitHub</li>
           <li class="pill">LaTeX</li>
         </ul>
       </div>
