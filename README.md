@@ -27,14 +27,14 @@ nothing to compile; publish the directory as-is.
 
 ## The CV download
 
-The **Download CV** button serves `uploads/CerriG_Resume.pdf`, saved to the
+The **Download CV** button serves `uploads/cerrig_resume.pdf`, saved to the
 visitor as `Ginevra-Cerri-CV.pdf`. Replace that file in place to publish a new
 version — no markup change needed.
 
 To change which file it points at, edit the one link in `index.html`:
 
 ```html
-<a class="btn btn--cv" href="uploads/CerriG_Resume.pdf" download="Ginevra-Cerri-CV.pdf">
+<a class="btn btn--cv" href="uploads/cerrig_resume.pdf" download="Ginevra-Cerri-CV.pdf">
 ```
 
 ## Origin
